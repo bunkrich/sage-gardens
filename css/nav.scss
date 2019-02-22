@@ -1,0 +1,111 @@
+#menu-button {
+    background: yellow;
+
+}
+
+nav {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: inherit;
+    }
+}
+@media screen and (max-width: 599px) {
+    nav {
+        background: black;
+        min-height: 100vh;
+        // display: grid;
+        align-items: center;
+    }
+}
+
+nav {
+    --pink: #F94F5A;
+    --purp: #374A84;
+    --navy: #00072D;
+    --blue: #001C55;
+    --li-blue: #A6E1FA;
+    --lav: #a682ff;
+    --dk-lav: #715aff;
+    --fire: #FB3640;
+    --green: #1EFFBC;
+
+    // font-size: 1.5em;
+
+    ul {
+        margin: 0;
+        list-style: none;
+        padding: .5em;
+
+        @media screen and (min-width: 600px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+    }
+
+    li {
+        padding: .5em 0;
+    }
+
+    a {
+        text-decoration: none;
+        transition: all .5s ease;
+        color: var(--dk-lav);
+        background: none;
+        border: none;
+        border-left: 3px solid var(--li-blue);
+        margin: 0 .4em;
+        cursor: pointer;
+        outline-style: none;
+        padding-left: .3em;
+
+        // background: yellow;
+        @media screen and (min-width: 600px) {
+            // line-height: normal;
+            padding: .1em 0;
+            border-left: none;
+            padding-left: 0;
+            border-bottom: 3px solid var(--navy);
+        }
+
+        &:hover {
+            color: var(--fire);
+            padding-left: .7em;
+            border-color: var(--dk-lav);
+
+            @media screen and (min-width: 600px) {
+                padding-left: 0;
+                margin: 0 1em;
+            }
+        }
+
+        &:focus {
+            color: var(--lav);
+            margin: 0 .4em;
+            border-color: var(--green);
+
+            @media screen and (min-width: 600px) {
+                border-color: var(--navy);
+            }
+        }
+
+        &:active {
+            border-color: var(--fire);
+
+        }
+    }
+
+}
+
+#contact:target {
+    min-height: 100vh;
+}
