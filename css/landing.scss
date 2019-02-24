@@ -154,8 +154,8 @@ header {
 }
 
 footer {
-    background: var(--coral);
-    color: var(--dk-teal);
+    background: var(--purple);
+    color: var(--orange);
     padding: 1em;
 }
 
@@ -252,3 +252,8 @@ a {
 
     }
 }}
+
+#process {
+    background: var(--pink);
+    color: var(--purple);
+}

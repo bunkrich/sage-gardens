@@ -751,8 +751,8 @@ header h1 {
 }
 
 footer {
-  background: var(--coral);
-  color: var(--dk-teal);
+  background: var(--purple);
+  color: var(--orange);
   padding: 1em;
 }
 
@@ -828,5 +828,10 @@ nav a:focus {
 
 nav a:active {
   border-color: var(--blue);
+}
+
+#process {
+  background: var(--pink);
+  color: var(--purple);
 }
 /*# sourceMappingURL=landing.css.map */
