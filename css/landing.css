@@ -620,8 +620,9 @@ main {
 
 nav {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: 1 / 2 / 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 1 / 1 / 1 / 4;
 }
 
 header {
@@ -739,7 +740,9 @@ header h1 {
 }
 
 footer {
-  background: rgba(179, 111, 23, 0.5);
+  background: var(--coral);
+  color: var(--dk-teal);
+  padding: 1em;
 }
 
 nav ul {
