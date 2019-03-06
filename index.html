@@ -12,8 +12,8 @@
   <!-- Place favicon.ico in the root directory -->
 
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="css/landing.css">
 
   <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
@@ -25,25 +25,66 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-<header>
-  <button id="menu-button">Menu</button>
-  <nav id='main-nav'>
-<ul>
-  <li><a href="about.html">About</a></li>
-  <li><a href="process.html">Process</a></li>
-  <li><a href="projects.html">Projects</a></li>
-  <li><a href="press.html">Press</a></li>
-  <li><a href="#contact">Contact</a></li>
-
-</ul>
-
-  </nav>
-  <h1>Sage Gardens</h1>
-</header>
-<main>
-<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+  <main>
+  <nav><ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#press">Press</a></li>
+      <li><a href="#contact">Contact</a></li>
+    
+    </ul></nav>
+  <header>
+    <h1>Sage Gardens</h1>
+  </header>
+  <div id="hero">
+      <img sizes="(max-width: 2160px) 100vw, 2160px" srcset="
+      img/Landing_page_cyrkzu_c_scale,w_190.jpg 190w,
+      img/Landing_page_cyrkzu_c_scale,w_481.jpg 481w,
+      img/Landing_page_cyrkzu_c_scale,w_671.jpg 671w,
+      img/Landing_page_cyrkzu_c_scale,w_838.jpg 838w,
+      img/Landing_page_cyrkzu_c_scale,w_976.jpg 976w,
+      img/Landing_page_cyrkzu_c_scale,w_1094.jpg 1094w,
+      img/Landing_page_cyrkzu_c_scale,w_1208.jpg 1208w,
+      img/Landing_page_cyrkzu_c_scale,w_1318.jpg 1318w,
+      img/Landing_page_cyrkzu_c_scale,w_1422.jpg 1422w,
+      img/Landing_page_cyrkzu_c_scale,w_1520.jpg 1520w,
+      img/Landing_page_cyrkzu_c_scale,w_1614.jpg 1614w,
+      img/Landing_page_cyrkzu_c_scale,w_1706.jpg 1706w,
+      img/Landing_page_cyrkzu_c_scale,w_1793.jpg 1793w,
+      img/Landing_page_cyrkzu_c_scale,w_1872.jpg 1872w,
+      img/Landing_page_cyrkzu_c_scale,w_1954.jpg 1954w,
+      img/Landing_page_cyrkzu_c_scale,w_2038.jpg 2038w,
+      img/Landing_page_cyrkzu_c_scale,w_2120.jpg 2120w,
+      img/Landing_page_cyrkzu_c_scale,w_2157.jpg 2157w,
+      img/Landing_page_cyrkzu_c_scale,w_2160.jpg 2160w"
+        src="img/Landing_page_cyrkzu_c_scale,w_2160.jpg" alt="Landscaping - Tall Grass Along Walkway Path in New York City by Sage Gardens NYC">
+  
+  </div>
+  <section id="cta">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat eveniet delectus atque voluptatum
+      repellendus quae nam illum error ipsam, amet porro cumque sit fuga, fugit repudiandae impedit incidunt nisi.</p>
+    <button>CTA Button</button>
+  </section>
+  <!-- <footer>
+    <h2>about</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptates neque laborum ea rem nulla culpa error
+      officiis quos maxime iusto itaque deleniti corrupti, ut, dolores veniam explicabo ab labore!</p>
+  </footer> -->
 </main>
-<footer id='contact'>footer</footer>
+<footer id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptates neque laborum ea rem nulla culpa error
+      officiis quos maxime iusto itaque deleniti corrupti, ut, dolores veniam explicabo ab labore!</p>
+      <h3>Contact</h3>
+      <p>Phone</p>
+      <p>@sagegarden</p>
+  </footer>
+  <footer id="process">
+      <h2>Process</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptates neque laborum ea rem nulla culpa error
+        officiis quos maxime iusto itaque deleniti corrupti, ut, dolores veniam explicabo ab labore!</p>
+    </footer>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
   <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script> -->
@@ -52,8 +93,13 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
